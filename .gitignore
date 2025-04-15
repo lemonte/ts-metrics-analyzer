@@ -1,0 +1,40 @@
+# Node.js
+node_modules/
+dist/
+.cache/
+.nyc_output/
+coverage/
+*.log
+*.tsbuildinfo
+
+# Arquivos de sistema/macOS
+.DS_Store
+.env
+.env.local
+.env.*.local
+
+# Exportações e dados gerados
+class_metrics.json
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos temporários e backups
+*.tmp
+*.bak
+*.swp
+*.orig
+
+# TypeScript
+*.js
+*.d.ts
+*.js.map
+
+# Logs de execução
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
