@@ -25,6 +25,7 @@ async function run() {
 
   // Copia o script para o repositório clonado
   cpSync("analyze-metrics.ts", `${repoName}/analyze-metrics.ts`);
+  cpSync("index.html", `${repoName}/index.html`);
 
   console.log("🔍 Rodando análise de métricas...");
   execSync("npx ts-node analyze-metrics.ts", {
