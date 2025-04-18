@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ts-metrics-analyzer
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./:/app
+      - /tmp:/tmp
+    environment:
+      - FLASK_ENV=development
+      - FLASK_APP=app.main
+    restart: unless-stopped
+    networks:
+      - metrics-network
+
+networks:
+  metrics-network:
+    driver: bridge
